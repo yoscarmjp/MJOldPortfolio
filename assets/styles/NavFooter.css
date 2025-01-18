@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+header {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row;
+}
+
+header nav ul {
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 30px;
+}
+
+header li a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  margin-right: 25px;
+  cursor: pointer;
+  transition: text-decoration 300ms ease;
+  position: relative;
+}
+
+header li a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: -12px;
+  left: 0;
+  background-color: #43266D;
+  transition: width 0.3s ease;
+}
+
+header li a:hover::after {
+  width: 75%;
+}
+
+header .logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 45px;
+  height: 45px;
+  background-color: #1B1428;
+  text-decoration: none;
+}
+
+header .logo a i{
+  font-size: 40px;
+  color: #43266D;
+}
+
+.btn{
+  background-color: #862ACD;
+  padding: 5px 12px;
+  width: 125px;
+  height: 45px;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 300ms ease;
+}
+
+.btn:hover {
+  border-radius: 8px;
+  background: none;
+  border: 1px solid #862ACD;
+  cursor: pointer;
+  color:#862ACD;
+}
+
+.flex-container-home .btn{
+  margin-top: 20px;
+}
+
+/* Footer */
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.line{
+  margin: 0 auto;
+  margin-top: 120px;
+  background-color: white;
+  width: 95%;
+  height: 2px;
+  border-radius: 6px;
+}
+
+footer .logo{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .logo img{
+  max-width: 65px;
+  margin-top: 20px;
+}
+
+footer .copy p{
+  color: white;
+  max-width: 400px;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer .socials a i{
+  font-size: 22px;
+  color: white;
+  margin: 5px;
+  transition: all 300ms ease;
+}
+
+footer .socials a i:hover{
+  transform: scale(1.5);
+}
